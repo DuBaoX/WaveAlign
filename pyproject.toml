@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wavealign-flux"
+version = "0.1.0"
+description = "WaveAlign: training-free high-resolution generation with FLUX.1-dev"
+requires-python = ">=3.10"
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = [
+  "torch>=2.4,<3",
+  "diffusers>=0.32.2,<0.33",
+  "transformers>=4.44,<4.56",
+  "accelerate>=1.0",
+  "numpy>=1.24",
+  "Pillow>=10",
+  "peft>=0.17,<0.18",
+  "safetensors>=0.4",
+]
+
+[project.optional-dependencies]
+demo = ["gradio>=3.35.2,<6"]
+test = ["pytest>=8", "PyWavelets>=1.5"]
+
+[project.scripts]
+wavealign-generate = "generate:main"
+wavealign-demo = "app:main"
+
+[tool.setuptools]
+py-modules = ["generate", "app"]
+
+[tool.setuptools.packages.find]
+include = ["wavealign*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
