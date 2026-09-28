@@ -2,8 +2,11 @@
 
 from __future__ import annotations
 
+from collections import Counter
 import json
 from pathlib import Path
+
+from PIL import Image
 
 import pytest
 import torch
@@ -13,6 +16,33 @@ from wavealign.noise import build_paper_noise_hierarchy
 from wavealign.schedules import alpha_sigma_cosine, alpha_sigma_linear
 from wavealign.wavelet import haar_ll, replace_ll
 from generate import WaveAlignRunner, digest, paper_config, read_prompt_rows
+
+
+def test_example_gallery_has_30_verified_lora_previews():
+    examples = Path(__file__).resolve().parents[1] / "examples"
+    manifest = json.loads((examples / "manifest.json").read_text(encoding="utf-8"))
+    entries = manifest["images"]
+    assert len(entries) == 30
+    assert len({entry["id"] for entry in entries}) == 30
+    assert len({(entry["source_job"], entry["source_key"]) for entry in entries}) == 30
+    assert Counter(entry["source_collection"] for entry in entries) == {
+        "cover_lora_final50_20260926": 20,
+        "cover_macro_realism_final30_20260926": 10,
+    }
+    assert len(list((examples / "images").glob("*.jpg"))) == 30
+    for entry in entries:
+        assert entry["lora"]["name"] != "none"
+        assert entry["lora"]["scale"] > 0
+        assert len(entry["lora"]["sha256"]) == 64
+        assert len(entry["original"]["sha256"]) == 64
+        image_path = examples / entry["file"]
+        assert image_path.resolve().parent == (examples / "images").resolve()
+        assert digest(image_path) == entry["preview"]["sha256"]
+        with Image.open(image_path) as image:
+            image.load()
+            assert image.format == "JPEG"
+            assert image.size == (entry["preview"]["width"], entry["preview"]["height"])
+            assert max(image.size) <= 1600
 
 
 def test_old_noise_matches_root_draw_and_couples_each_stage():

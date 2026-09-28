@@ -11,10 +11,12 @@ ROOT = Path(__file__).resolve().parents[1]
 FILES = (
     "README.md", "LICENSE", "pyproject.toml", ".gitignore",
     "generate.py", "app.py", "tools/export_public.py",
-    "examples/prompts.jsonl", ".github/workflows/tests.yml",
+    "examples/prompts.jsonl", "examples/README.md", "examples/manifest.json",
+    ".github/workflows/tests.yml",
 )
 PACKAGE = tuple(sorted((ROOT / "wavealign").glob("*.py")))
 TESTS = (ROOT / "tests/test_release.py",)
+EXAMPLE_IMAGES = tuple(sorted((ROOT / "examples/images").glob("*.jpg")))
 
 
 def export(destination: Path) -> list[str]:
@@ -23,7 +25,7 @@ def export(destination: Path) -> list[str]:
         raise FileExistsError(f"destination already exists: {destination}")
     if destination == ROOT or ROOT in destination.parents:
         raise ValueError("export outside the development tree")
-    sources = [ROOT / name for name in FILES] + list(PACKAGE) + list(TESTS)
+    sources = [ROOT / name for name in FILES] + list(PACKAGE) + list(TESTS) + list(EXAMPLE_IMAGES)
     for source in sources:
         if not source.is_file():
             raise FileNotFoundError(source)

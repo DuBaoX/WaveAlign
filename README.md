@@ -4,6 +4,10 @@ Reference FLUX.1-dev implementation of **WaveAlign: Wavelet-Based Alignment for 
 
 The public entry points are `generate.py` for command-line generation and `app.py` for a local Gradio demo. The Python package is `wavealign`.
 
+## Examples
+
+The [30-image LoRA gallery](examples/README.md) contains 20 selections from the original 50-image review and 10 additional architecture, library, and aerial subjects. Each image is a web-size preview; [the manifest](examples/manifest.json) records its prompt, seed, LoRA identifier and scale, source-image hash, and preview hash. These historical examples used the original linear release, while the public demo defaults to cosine. The source 4K PNGs and third-party LoRA weights are not redistributed.
+
 ## Method and release setting
 
 WaveAlign couples stage noise in an orthonormal Haar hierarchy, mixes the first-level latent low frequencies with a pixel-upsampled anchor, queries a completed parent clean-prediction cache at the phase given by scale-time conjugacy, and applies progressively released LL2 structural guidance. The three stages use 30/14/12 model steps and shifts 3/6/12. The implementation uses the original FLUX attention path and performs no training.
@@ -59,7 +63,7 @@ Open `http://127.0.0.1:7860` locally or forward the port over SSH. The single-me
 
 Each run has stage PNGs, `run.json` with per-step `sigma` and `alpha`, and `wavealign.json` with prompt, seed, method protocol, model-index hash, dependency versions, LoRA hash, and image hashes. A failed run keeps `error.txt` and does not appear in the completed-run browser. Keep the same model revision, dependency versions, seed, release schedule, and LoRA setting for comparisons. A 2K run is the first two stages of the same cascade.
 
-The original private experiments, evaluation data, and cluster submission scripts remain outside the public export. `python tools/export_public.py /path/to/new/repo` writes an allowlisted, standalone release tree without weights, generated images, benchmark artifacts, or cluster scripts.
+The original private experiments, evaluation data, and cluster submission scripts remain outside the public export. `python tools/export_public.py /path/to/new/repo` writes an allowlisted, standalone release tree with the curated example previews, without weights, full-resolution experiment outputs, benchmark artifacts, or cluster scripts.
 
 ## Development checks
 

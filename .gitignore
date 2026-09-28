@@ -10,6 +10,7 @@ gallery/
 *.pth
 *.png
 *.jpg
+!examples/images/*.jpg
 *.jpeg
 *.pdf
 *.log

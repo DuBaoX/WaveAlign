@@ -1,0 +1,817 @@
+{
+  "schema_version": 1,
+  "description": "Curated LoRA image previews from historical WaveAlign old-noise, linear-release 4K experiments. Source PNGs are retained outside this public repository.",
+  "preview_transform": "ImageMagick convert: resize to fit within 1600x1600 without upscaling; strip metadata; JPEG quality 88; no crop.",
+  "images": [
+    {
+      "id": "01-mountain-traveler",
+      "file": "images/01-mountain-traveler.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 2,
+      "source_job": "cover-lora-100-20260926-v1",
+      "source_key": "person02/seed-44",
+      "source_image": "I_4096x4096.png",
+      "category": "person",
+      "prompt": "Ultra realistic, a lone adult traveler in a weathered coat standing on the edge of a massive mountain ridge above a misty valley, believable outdoor clothing, layered mountains, dramatic scale and natural light, cinematic photograph.",
+      "seed": 44,
+      "lora": {
+        "name": "canopus_ultrarealism",
+        "scale": 0.8,
+        "sha256": "c48305997c7a52cc0702cf2d8043e2d04c9e47531d4a617481703a7c2307ea67"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "e9cee0ca35b92fe10792eba52228fb2e372417e0ec6d2b70af092bc0fe8e7204"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "889839a0e726d6eb5fe09a99cad679c62ffef9f4477bc76cf9de198c121e689f"
+      }
+    },
+    {
+      "id": "02-wildflower-portrait",
+      "file": "images/02-wildflower-portrait.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 3,
+      "source_job": "cover-lora-100-20260926-v1",
+      "source_key": "person03/seed-55",
+      "source_image": "I_4096x4096.png",
+      "category": "person",
+      "prompt": "Super Realism, an adult woman in a flowing white dress walking through a field of wildflowers at sunrise, wind moving her hair and fabric, natural face and hands, layered atmospheric depth, cinematic photograph.",
+      "seed": 55,
+      "lora": {
+        "name": "flux_super_realism",
+        "scale": 0.8,
+        "sha256": "4eac4ce670b7d0a331e96c8a1973fe466c4179f7019e514555b1a30855e70090"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "1b32ef8f5c33327e832a41c5d82d8b436acbbd57a4a67abec70aff9a5a9082e6"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "f89c65c4dc558dd095b9db3431940f0c6c2e2262c6f44f74bb643975e8d97fb4"
+      }
+    },
+    {
+      "id": "03-mountain-guide",
+      "file": "images/03-mountain-guide.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 8,
+      "source_job": "cover-lora-100-20260926-v1",
+      "source_key": "person08/seed-77",
+      "source_image": "I_4096x4096.png",
+      "category": "person",
+      "prompt": "Ultra realistic, an elderly mountain guide standing beside a small stone shelter above a deep valley, weathered face and hands, layered wool clothing, distant winding river and cloud shadows, documentary environmental portrait.",
+      "seed": 77,
+      "lora": {
+        "name": "canopus_ultrarealism",
+        "scale": 0.8,
+        "sha256": "c48305997c7a52cc0702cf2d8043e2d04c9e47531d4a617481703a7c2307ea67"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "22c1d5b11ca9053ddd8455207f0f4023dd4a55348479afe3da32d4be65a38832"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "d2fd545c26b71809bf99b46af103453f51eb6e5ac8502add3b2ff55867ccc044"
+      }
+    },
+    {
+      "id": "04-red-fox",
+      "file": "images/04-red-fox.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 12,
+      "source_job": "cover-lora-100-20260926-v1",
+      "source_key": "animal02/seed-77",
+      "source_image": "I_4096x4096.png",
+      "category": "animal",
+      "prompt": "Ultra realistic, a red fox standing in a misty autumn forest, fine orange fur lit by rays of sunlight, fallen leaves and layered depth, four anatomically believable legs, cinematic wildlife photograph.",
+      "seed": 77,
+      "lora": {
+        "name": "canopus_ultrarealism",
+        "scale": 0.8,
+        "sha256": "c48305997c7a52cc0702cf2d8043e2d04c9e47531d4a617481703a7c2307ea67"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "baf18b56b1648cbffbd8b6770e72d0a7661807fb11c13a96243dff77e0616d45"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "639c017570ae242553f6a75d34fc4bf32f5e02614f1e50adbf5ebcdfc1f900aa"
+      }
+    },
+    {
+      "id": "05-river-bear",
+      "file": "images/05-river-bear.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 18,
+      "source_job": "cover-lora-100-20260926-v1",
+      "source_key": "animal08/seed-55",
+      "source_image": "I_4096x4096.png",
+      "category": "animal",
+      "prompt": "Ultra realistic, a brown bear walking along a shallow alpine river, wet fur catching soft morning light, river stones visible through water, dense fir forest and distant glacier, one complete animal, cinematic wildlife photograph.",
+      "seed": 55,
+      "lora": {
+        "name": "canopus_ultrarealism",
+        "scale": 0.8,
+        "sha256": "c48305997c7a52cc0702cf2d8043e2d04c9e47531d4a617481703a7c2307ea67"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "68722814ef307f933cf7edf4c619bcf2ddd1138d4b84541df5ff0402bef39f47"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "8fe2040fd60e25535f4844dc3d2f098dc81ad59be29d8e087579e1bbc6cc6840"
+      }
+    },
+    {
+      "id": "06-kingfisher",
+      "file": "images/06-kingfisher.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 20,
+      "source_job": "cover-lora-100-20260926-v1",
+      "source_key": "animal10/seed-55",
+      "source_image": "I_4096x4096.png",
+      "category": "animal",
+      "prompt": "Ultra realistic, a kingfisher perched on a branch above a mountain stream, tiny feather detail and clean beak silhouette, textured wet stones, distant forest softened by morning haze, cinematic wildlife photograph.",
+      "seed": 55,
+      "lora": {
+        "name": "canopus_ultrarealism",
+        "scale": 0.8,
+        "sha256": "c48305997c7a52cc0702cf2d8043e2d04c9e47531d4a617481703a7c2307ea67"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "eedf6e1d67653d97c5a44fe7a7c2a77b21f7813bcfdf1d06481967f456d32946"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "fd315589c43cbfe112c92b91d7b55f06a6b115efae9e731a6c1d16ed3ffc013b"
+      }
+    },
+    {
+      "id": "07-forest-waterfall",
+      "file": "images/07-forest-waterfall.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 22,
+      "source_job": "cover-lora-100-20260926-v1",
+      "source_key": "scene02/seed-55",
+      "source_image": "I_4096x4096.png",
+      "category": "landscape",
+      "prompt": "A monumental waterfall descending between enormous forest-covered cliffs, sunlight illuminating drifting mist, a few tiny hikers emphasizing scale, coherent water flow and layered stone texture, cinematic landscape.",
+      "seed": 55,
+      "lora": {
+        "name": "xlabs_scenery",
+        "scale": 0.8,
+        "sha256": "1956be0c699aaa7f806c35d0e4e9aa94b72d54f9c841a4fc40b876692e4ed756"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "021c7a876618cded185ec9d67307b55e87b3a01c77ab1f627eb5f27681111e71"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "42e80b9fa4dd93991183950db4bdb174a395ad8b630a7dea44b35fa98d28d033"
+      }
+    },
+    {
+      "id": "08-coastal-cliffs",
+      "file": "images/08-coastal-cliffs.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 23,
+      "source_job": "cover-lora-100-20260926-v1",
+      "source_key": "scene04/seed-55",
+      "source_image": "I_4096x4096.png",
+      "category": "landscape",
+      "prompt": "Landscape, a vast coastline with towering cliffs, turquoise waves and one winding road disappearing toward the horizon, dramatic sunset clouds, coherent shoreline and natural sea foam, cinematic aerial photograph.",
+      "seed": 55,
+      "lora": {
+        "name": "civitai_220995_1280356",
+        "scale": 0.8,
+        "sha256": "dec9987acda23ec65cc5bf349c17e2b76eb01aa37e0fb90052c0fceaced82e91"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "b8591cffc7acaee79e82f826bfd23738508417bdb36ad2b2654af158839f3476"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "925464d99380d172e5cc5ae6795058c907ad2b4523f5e35970f218e353f16165"
+      }
+    },
+    {
+      "id": "09-greenhouse-botanist",
+      "file": "images/09-greenhouse-botanist.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 25,
+      "source_job": "cover-lora-416-20260926-v1",
+      "source_key": "film_person03/seed-42",
+      "source_image": "I_4096x4096.png",
+      "category": "person",
+      "prompt": "filmfotos, film grain, reversal film photography, an adult botanist inspecting one orchid inside a Victorian glasshouse, natural fingers, glass ribs, damp leaves and soft morning haze. Cinematic environmental portrait, natural skin and fabric texture, one coherent scene, no lettering or watermark.",
+      "seed": 42,
+      "lora": {
+        "name": "film_portrait",
+        "scale": 0.9,
+        "sha256": "7ee7a22996e3dd89bbd1afe909fb553f988cf0deae827a35372b19b5e5dc8bb2"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "a5663841e747a7b634c126e64ed8a7b21215e02aec79a09c03561ba658f7235c"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "02285c31da41da8dc25c6c5043349e6d2bdc85fdc63ba6dd26e75255243b87f5"
+      }
+    },
+    {
+      "id": "10-violin-maker",
+      "file": "images/10-violin-maker.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 27,
+      "source_job": "cover-lora-416-20260926-v1",
+      "source_key": "film_person07/seed-44",
+      "source_image": "I_4096x4096.png",
+      "category": "person",
+      "prompt": "filmfotos, film grain, reversal film photography, an elderly violin maker examining a maple instrument beside a tall studio window, fine wood grain, gentle face and warm reflected light. Cinematic environmental portrait, natural skin and fabric texture, one coherent scene, no lettering or watermark.",
+      "seed": 44,
+      "lora": {
+        "name": "film_portrait",
+        "scale": 0.9,
+        "sha256": "7ee7a22996e3dd89bbd1afe909fb553f988cf0deae827a35372b19b5e5dc8bb2"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "26a65f94a14708e8c02bc6a85858d1233ecbf210d184ca224cd82158670b6302"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "cc24aec6e572294adc8347304c8155b77ad505253c2d8413fdc3e927961a8e8e"
+      }
+    },
+    {
+      "id": "11-orca",
+      "file": "images/11-orca.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 32,
+      "source_job": "cover-lora-416-20260926-v1",
+      "source_key": "real_animal03/seed-101",
+      "source_image": "I_4096x4096.png",
+      "category": "animal",
+      "prompt": "an orca surfacing beside a rocky Pacific coast, coherent dorsal fin, clear waterline and distant fog. Photorealistic wildlife photography, natural light, believable anatomy, detailed near subject and atmospheric background, no lettering or watermark.",
+      "seed": 101,
+      "lora": {
+        "name": "flux_realism",
+        "scale": 0.8,
+        "sha256": "0a83a924b822b70b5e458d27935ebfa7713edaee04ff9f194209525354031eca"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "1a2148ad89aac1d9b566a7d50480b8904c8832aee8ac9d29885038ccf367961c"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "3499b34560a308087d1f96cfaccc3ca57ea7be7108487c729c31f1744b4b1ba4"
+      }
+    },
+    {
+      "id": "12-hummingbird",
+      "file": "images/12-hummingbird.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 33,
+      "source_job": "cover-lora-416-20260926-v1",
+      "source_key": "real_animal04/seed-202",
+      "source_image": "I_4096x4096.png",
+      "category": "animal",
+      "prompt": "a hummingbird hovering beside a scarlet flower in a cloud forest, individual feathers and a clean slender beak. Photorealistic wildlife photography, natural light, believable anatomy, detailed near subject and atmospheric background, no lettering or watermark.",
+      "seed": 202,
+      "lora": {
+        "name": "flux_realism",
+        "scale": 0.8,
+        "sha256": "0a83a924b822b70b5e458d27935ebfa7713edaee04ff9f194209525354031eca"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "753577003fc14532bab8f34e7b63d536b1ff4f3e5bc8c969aa9375c2bed16fdf"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "12feebcdd170b4643c94b513832c9257278827664c7d539e2b588954bb4d9936"
+      }
+    },
+    {
+      "id": "13-puffin",
+      "file": "images/13-puffin.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 38,
+      "source_job": "cover-lora-416-20260926-v1",
+      "source_key": "detail_animal01/seed-202",
+      "source_image": "I_4096x4096.png",
+      "category": "animal",
+      "prompt": "a puffin standing on a sea cliff among tiny wildflowers, orange beak, fine layered feathers, clear feet and rolling surf behind. High-detail natural wildlife photograph, crisp local texture, coherent body, restrained depth of field, no lettering or watermark.",
+      "seed": 202,
+      "lora": {
+        "name": "flux_detailer",
+        "scale": 0.5,
+        "sha256": "f968a6669d45cd249e6439e06e63093b1348d3df2465bc2f85e57f87638bd6eb"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "51251d9940cf7cc0f84747597b098354cbcdff0457e11903d21ac033f899e379"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "11593398dec88c95a60aab6a7a64e536fcdb7c6763573b1b1ce791ca0d78ef13"
+      }
+    },
+    {
+      "id": "14-sahara-caravan",
+      "file": "images/14-sahara-caravan.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 40,
+      "source_job": "cover-lora-416-20260926-v1",
+      "source_key": "real_scene02/seed-44",
+      "source_image": "I_4096x4096.png",
+      "category": "landscape",
+      "prompt": "a Sahara dune field at sunrise, a small caravan crossing one ridge, wind-shaped sand and immense layered distance. Photorealistic landscape photography, coherent large-scale geography, intricate foreground detail, natural light, no lettering or watermark.",
+      "seed": 44,
+      "lora": {
+        "name": "flux_realism",
+        "scale": 0.8,
+        "sha256": "0a83a924b822b70b5e458d27935ebfa7713edaee04ff9f194209525354031eca"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "c5493aa8de4f07ca0a4be7e3726afb5d2eeda65002b49e64069e088a3c7e7e79"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "aae0071e866faab4c2735d3091a940319a38b3f056e188edc6d8b9c835cf759a"
+      }
+    },
+    {
+      "id": "15-redwood-creek",
+      "file": "images/15-redwood-creek.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 41,
+      "source_job": "cover-lora-416-20260926-v1",
+      "source_key": "real_scene04/seed-303",
+      "source_image": "I_4096x4096.png",
+      "category": "landscape",
+      "prompt": "an ancient redwood forest around a clear meandering creek, enormous trunks, fine ferns and soft shafts of light. Photorealistic landscape photography, coherent large-scale geography, intricate foreground detail, natural light, no lettering or watermark.",
+      "seed": 303,
+      "lora": {
+        "name": "flux_realism",
+        "scale": 0.8,
+        "sha256": "0a83a924b822b70b5e458d27935ebfa7713edaee04ff9f194209525354031eca"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "d3dd179585d5228da84b4cf2437132874b02e6ff8f26c8a61b6973c9709cca22"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "3d8769bb61e5fe09f0f0f5bbbf1610ff3f24ff6ffb85433763c98611f154a996"
+      }
+    },
+    {
+      "id": "16-rice-terraces",
+      "file": "images/16-rice-terraces.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 42,
+      "source_job": "cover-lora-416-20260926-v1",
+      "source_key": "real_scene05/seed-303",
+      "source_image": "I_4096x4096.png",
+      "category": "landscape",
+      "prompt": "curved rice terraces descending into a mist-filled mountain valley, small paths and natural water reflections. Photorealistic landscape photography, coherent large-scale geography, intricate foreground detail, natural light, no lettering or watermark.",
+      "seed": 303,
+      "lora": {
+        "name": "flux_realism",
+        "scale": 0.8,
+        "sha256": "0a83a924b822b70b5e458d27935ebfa7713edaee04ff9f194209525354031eca"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "789575ef291b00aa3a57fcd1b3a9c07e0ac1d49b5805586985458437419156f7"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "8af226605ad51b6c0b6bffb8756bc908d4a47075d7ce2f26680823386362488b"
+      }
+    },
+    {
+      "id": "17-aurora-cabin",
+      "file": "images/17-aurora-cabin.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 44,
+      "source_job": "cover-lora-416-20260926-v1",
+      "source_key": "real_scene07/seed-303",
+      "source_image": "I_4096x4096.png",
+      "category": "landscape",
+      "prompt": "an Arctic tundra valley beneath green aurora, frozen grasses and a lone warm-lit cabin among distant peaks. Photorealistic landscape photography, coherent large-scale geography, intricate foreground detail, natural light, no lettering or watermark.",
+      "seed": 303,
+      "lora": {
+        "name": "flux_realism",
+        "scale": 0.8,
+        "sha256": "0a83a924b822b70b5e458d27935ebfa7713edaee04ff9f194209525354031eca"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "d5a0e40d84fa8dd1ae0731e355a52a69f90eb58dfc6162f357797021ba9193b4"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "cd20d43f4498f1c5c8e42431967835364cbeea771faefa511116a556953868a5"
+      }
+    },
+    {
+      "id": "18-atlantic-coast",
+      "file": "images/18-atlantic-coast.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 47,
+      "source_job": "cover-lora-416-20260926-v1",
+      "source_key": "pano_scene02/seed-303",
+      "source_image": "I_4096x4096.png",
+      "category": "landscape",
+      "prompt": "HDRI panoramic view of TOK, a wild Atlantic coastline, immense cliffs, sea arches and distant headlands under a clearing storm, natural wave patterns. Expansive realistic landscape, continuous horizon, layered depth, no lettering or watermark.",
+      "seed": 303,
+      "lora": {
+        "name": "panorama",
+        "scale": 0.8,
+        "sha256": "dea506dc7b0923ee5e693449c122d8ecad700c54d78d7096a74d43c99d4a398e"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "cda1d70c5bcab6800291d5d6e91533448cd1c35f33512e5b0b7da13ab7433bb8"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "030f043f47c716802ecd33ea84c668a09f5e0de5ffca29e2879e5790bb5333c3"
+      }
+    },
+    {
+      "id": "19-teacup-village",
+      "file": "images/19-teacup-village.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 48,
+      "source_job": "cover-lora-stylized-new-128-20260926-v1",
+      "source_key": "tiny01/seed-42",
+      "source_image": "I_4096x4096.png",
+      "category": "miniature",
+      "prompt": "A miniature wonderland inside a porcelain teacup: a connected village of tiny cottages, footbridges, flowering trees and a narrow stream, seen as a handcrafted scale model. One clear focal street, tiny people for scale, crisp miniature details and soft macro light. No lettering or watermark.",
+      "seed": 42,
+      "lora": {
+        "name": "civitai_770860_862188",
+        "scale": 0.8,
+        "sha256": "840d99ff152dfd27be7aacaede4b497df4fe81ba83bebc3b083c33e399b291d3"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "b4644967657442828b48665124d272ddd73a87d2adad3bdcc2428abf69d92d12"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "736308ed78dfb8c3759bf1858a8742f13043f46d19c52dced760295a7113a944"
+      }
+    },
+    {
+      "id": "20-miniature-coastal-village",
+      "file": "images/20-miniature-coastal-village.jpg",
+      "source_collection": "cover_lora_final50_20260926",
+      "source_rank": 50,
+      "source_job": "cover-lora-stylized-new-128-20260926-v1",
+      "source_key": "tiny13/seed-42",
+      "source_image": "I_4096x4096.png",
+      "category": "miniature",
+      "prompt": "A finely constructed miniature coastal village on a single display base, connected white buildings, red tiled roofs, winding stone stairs, a small harbor and tiny residents, warm evening light, coherent architecture and fine model-making detail. No lettering or watermark.",
+      "seed": 42,
+      "lora": {
+        "name": "civitai_764445_855045",
+        "scale": 0.8,
+        "sha256": "4efaed36a13d1e3ddf78a96973155dbae2977db9e4883ec3202f139cde19adcc"
+      },
+      "original": {
+        "width": 4096,
+        "height": 4096,
+        "sha256": "22bc229cf9eed8846ca730c857854dcb1fc0ea12fdce052bae57c3465e761aa6"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1600,
+        "sha256": "d8da50b816fb512de55ecd0efd3e15789cc37d64e194d0ea26e835e07c45b9cd"
+      }
+    },
+    {
+      "id": "21-grand-library",
+      "file": "images/21-grand-library.jpg",
+      "source_collection": "cover_macro_realism_final30_20260926",
+      "source_rank": 1,
+      "source_job": "cover-macro-realism-48-20260926-v1",
+      "source_key": "macro_lib01/seed-42",
+      "source_image": "I_4096x3072.png",
+      "category": "library",
+      "prompt": "Photorealistic architectural photograph of a grand public library atrium, three levels of dark oak bookshelves surrounding a sunlit reading floor, slender brass railings and a few readers for scale, symmetrical central aisle, credible joinery and natural skylight, full-room wide view, no legible text",
+      "seed": 42,
+      "lora": {
+        "name": "flux_realism",
+        "scale": 0.8,
+        "sha256": "0a83a924b822b70b5e458d27935ebfa7713edaee04ff9f194209525354031eca"
+      },
+      "original": {
+        "width": 4096,
+        "height": 3072,
+        "sha256": "9efbefe4bba8a3df4b8578c1cc72731e16eefd46104f4e741fac85a77d998282"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1200,
+        "sha256": "8bbb83f6f60fade01721305e3c457c2c6e1125cd8aaa22cc80b9233d52158889"
+      }
+    },
+    {
+      "id": "22-waterfront-opera",
+      "file": "images/22-waterfront-opera.jpg",
+      "source_collection": "cover_macro_realism_final30_20260926",
+      "source_rank": 4,
+      "source_job": "cover-macro-realism-48-20260926-v1",
+      "source_key": "macro_arch03/seed-77",
+      "source_image": "I_4096x2304.png",
+      "category": "architecture",
+      "prompt": "Photorealistic waterfront opera house at blue hour, curved stone terraces and glass foyer opening toward a harbor, pedestrians for scale, city lights reflected in wet paving, balanced skyline and complete building silhouette, architectural photography, no logos",
+      "seed": 77,
+      "lora": {
+        "name": "flux_realism",
+        "scale": 0.8,
+        "sha256": "0a83a924b822b70b5e458d27935ebfa7713edaee04ff9f194209525354031eca"
+      },
+      "original": {
+        "width": 4096,
+        "height": 2304,
+        "sha256": "68a3be8b05e8e6315ee126462b9a73d7d1abeea0fe5032830a227062bb8572e0"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 900,
+        "sha256": "44c742152bc37aa06c0443845069932e092f9cff7939a0c61ffa3a8dd84bdea5"
+      }
+    },
+    {
+      "id": "23-reading-room",
+      "file": "images/23-reading-room.jpg",
+      "source_collection": "cover_macro_realism_final30_20260926",
+      "source_rank": 6,
+      "source_job": "cover-macro-realism-48-20260926-v1",
+      "source_key": "macro_lib02/seed-42",
+      "source_image": "I_4096x2304.png",
+      "category": "library",
+      "prompt": "Wide interior photograph of an old university reading room, long rows of green-shaded lamps, polished wooden tables, vaulted stone ceiling and high windows, students quietly reading, strong one-point perspective from the entrance, believable materials and afternoon daylight, photorealism, no legible text",
+      "seed": 42,
+      "lora": {
+        "name": "flux_realism",
+        "scale": 0.8,
+        "sha256": "0a83a924b822b70b5e458d27935ebfa7713edaee04ff9f194209525354031eca"
+      },
+      "original": {
+        "width": 4096,
+        "height": 2304,
+        "sha256": "39fb60799cd38ba8470e180c0e0ca017c4cde469e0d2f1973ced0a94f8981311"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 900,
+        "sha256": "a852802a7f2a5a14febac4be352eeca13f38bdc2b6c8221b091fc21e95d18056"
+      }
+    },
+    {
+      "id": "24-coastal-town-aerial",
+      "file": "images/24-coastal-town-aerial.jpg",
+      "source_collection": "cover_macro_realism_final30_20260926",
+      "source_rank": 7,
+      "source_job": "cover-macro-realism-48-20260926-v1",
+      "source_key": "macro_aerial02/seed-42",
+      "source_image": "I_4096x2304.png",
+      "category": "aerial",
+      "prompt": "Photorealistic drone panorama above a Mediterranean coastal town, tightly packed stone roofs on a headland, small marina, curved shoreline and deep blue sea, natural midday shadows and varied building scale, horizon visible, no fantasy structures",
+      "seed": 42,
+      "lora": {
+        "name": "panorama",
+        "scale": 0.8,
+        "sha256": "dea506dc7b0923ee5e693449c122d8ecad700c54d78d7096a74d43c99d4a398e"
+      },
+      "original": {
+        "width": 4096,
+        "height": 2304,
+        "sha256": "db7ec54640d1019c532bba1b7b7c3750ae368529ec8017d85acb5a129ccc5c9d"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 900,
+        "sha256": "deb83fa1357ba4af907e2c1aaabe919e697f22cfc9da729376fb4bd344dcf364"
+      }
+    },
+    {
+      "id": "25-railway-station",
+      "file": "images/25-railway-station.jpg",
+      "source_collection": "cover_macro_realism_final30_20260926",
+      "source_rank": 9,
+      "source_job": "cover-macro-realism-48-20260926-v1",
+      "source_key": "macro_arch02/seed-42",
+      "source_image": "I_4096x2304.png",
+      "category": "architecture",
+      "prompt": "Photorealistic panoramic interior of a historic railway station, long iron-and-glass roof spanning multiple platforms, one arriving train and small travelers, strong leading lines to the far clock tower, morning haze with plausible shadows, real engineering scale, no readable advertising",
+      "seed": 42,
+      "lora": {
+        "name": "flux_realism",
+        "scale": 0.8,
+        "sha256": "0a83a924b822b70b5e458d27935ebfa7713edaee04ff9f194209525354031eca"
+      },
+      "original": {
+        "width": 4096,
+        "height": 2304,
+        "sha256": "d33ac65b333352fbb802c403f5cb721e32a5a3c4ebb94ff20d104d5bee5a6fad"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 900,
+        "sha256": "d699e10a628ca1dd1b2c99fbbd99e6f76ffa5425710b1b2e12def9d685ce0dbd"
+      }
+    },
+    {
+      "id": "26-agricultural-aerial",
+      "file": "images/26-agricultural-aerial.jpg",
+      "source_collection": "cover_macro_realism_final30_20260926",
+      "source_rank": 12,
+      "source_job": "cover-macro-realism-48-20260926-v1",
+      "source_key": "macro_aerial03/seed-77",
+      "source_image": "I_4096x2304.png",
+      "category": "aerial",
+      "prompt": "Top-down drone photograph of broad agricultural fields and a winding irrigation canal, irregular crop patterns, farm tracks and a small working village, rich but natural seasonal greens, coherent land geometry, wide editorial landscape composition, no people enlarged beyond scale",
+      "seed": 77,
+      "lora": {
+        "name": "panorama",
+        "scale": 0.8,
+        "sha256": "dea506dc7b0923ee5e693449c122d8ecad700c54d78d7096a74d43c99d4a398e"
+      },
+      "original": {
+        "width": 4096,
+        "height": 2304,
+        "sha256": "edaab32c80dc123f44eabd9f9426c4bc819d7a420191eabd704600a6236a43ed"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 900,
+        "sha256": "ad7ef810435eb513e6f29cf36c7e18a8716b9d17d7a47dd023c7cb4c4c09f00a"
+      }
+    },
+    {
+      "id": "27-art-museum",
+      "file": "images/27-art-museum.jpg",
+      "source_collection": "cover_macro_realism_final30_20260926",
+      "source_rank": 14,
+      "source_job": "cover-macro-realism-48-20260926-v1",
+      "source_key": "macro_arch01/seed-77",
+      "source_image": "I_4096x3072.png",
+      "category": "architecture",
+      "prompt": "Photorealistic exterior of a contemporary art museum built from pale limestone and glass beside a reflecting pool, visitors walking along a broad colonnade, layered facades and realistic reflections, restrained overcast daylight, three-quarter architectural view, complete building in frame, no legible signs",
+      "seed": 77,
+      "lora": {
+        "name": "flux_realism",
+        "scale": 0.8,
+        "sha256": "0a83a924b822b70b5e458d27935ebfa7713edaee04ff9f194209525354031eca"
+      },
+      "original": {
+        "width": 4096,
+        "height": 3072,
+        "sha256": "c3febfb644dd90971731fce19c223cd1859a5f87f526dd21f45ff5b4c43dd92b"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 1200,
+        "sha256": "d8c0aba37c3b011c0404dfc273ba9b6d49b6b4cdc65640776e253a2def24a90f"
+      }
+    },
+    {
+      "id": "28-mountain-reservoir-aerial",
+      "file": "images/28-mountain-reservoir-aerial.jpg",
+      "source_collection": "cover_macro_realism_final30_20260926",
+      "source_rank": 17,
+      "source_job": "cover-macro-realism-48-20260926-v1",
+      "source_key": "macro_aerial04/seed-77",
+      "source_image": "I_4096x2304.png",
+      "category": "aerial",
+      "prompt": "Realistic oblique aerial panorama of a mountain reservoir, one winding road following the shore, forested slopes and tiny vehicles for scale, layered blue ridges receding into mist, late morning sunlight, physically plausible roads and water edges",
+      "seed": 77,
+      "lora": {
+        "name": "panorama",
+        "scale": 0.8,
+        "sha256": "dea506dc7b0923ee5e693449c122d8ecad700c54d78d7096a74d43c99d4a398e"
+      },
+      "original": {
+        "width": 4096,
+        "height": 2304,
+        "sha256": "81dc978f6402d28d35d9281e8a6bb0a3ea45df4cddd20d672081b2615ad71ebb"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 900,
+        "sha256": "b8a5307e16f97b836b1cd65ca9748a6e2f17d48f9a0e579f4150857c163629a5"
+      }
+    },
+    {
+      "id": "29-city-square-aerial",
+      "file": "images/29-city-square-aerial.jpg",
+      "source_collection": "cover_macro_realism_final30_20260926",
+      "source_rank": 22,
+      "source_job": "cover-macro-realism-48-20260926-v1",
+      "source_key": "macro_aerial05/seed-77",
+      "source_image": "I_4096x2304.png",
+      "category": "aerial",
+      "prompt": "Drone panorama over a historic city square and surrounding roofscape, cathedral tower as central landmark, streets radiating through varied old buildings, pedestrians very small at ground level, warm late-afternoon shadows, realistic architecture and urban density",
+      "seed": 77,
+      "lora": {
+        "name": "panorama",
+        "scale": 0.8,
+        "sha256": "dea506dc7b0923ee5e693449c122d8ecad700c54d78d7096a74d43c99d4a398e"
+      },
+      "original": {
+        "width": 4096,
+        "height": 2304,
+        "sha256": "45fd0dfe958a71d193dc8249ea48445d0f7002b2ba488bde3cf181f8ed0e7ba5"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 900,
+        "sha256": "bbbb9ecedda699649396ca91748089bb06a2c9735cd66e0d6c9a7b93396bf81b"
+      }
+    },
+    {
+      "id": "30-volcanic-caldera-aerial",
+      "file": "images/30-volcanic-caldera-aerial.jpg",
+      "source_collection": "cover_macro_realism_final30_20260926",
+      "source_rank": 25,
+      "source_job": "cover-macro-realism-48-20260926-v1",
+      "source_key": "macro_aerial06/seed-42",
+      "source_image": "I_4096x2304.png",
+      "category": "aerial",
+      "prompt": "Landscape, photorealistic drone view across a volcanic caldera, crater lake, layered mineral slopes and a narrow hiking trail, distant mountains under clear sky, believable terrain scale and aerial depth, wide composition without fantasy lava",
+      "seed": 42,
+      "lora": {
+        "name": "civitai_220995_1280356",
+        "scale": 0.8,
+        "sha256": "dec9987acda23ec65cc5bf349c17e2b76eb01aa37e0fb90052c0fceaced82e91"
+      },
+      "original": {
+        "width": 4096,
+        "height": 2304,
+        "sha256": "47fa3c58ec2ca37435543d30689c939e071d6bcdf159d6742ff632c6b40a7729"
+      },
+      "preview": {
+        "width": 1600,
+        "height": 900,
+        "sha256": "a1dada965e061746b4c940ec9274fa501087b4c71a3ea2755271b330d2724b08"
+      }
+    }
+  ]
+}
